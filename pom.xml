@@ -28,6 +28,8 @@
 		<groovy-eclipse-batch.version>2.4.3-01</groovy-eclipse-batch.version>
 		<groovy-eclipse-compiler.version>2.9.2-01</groovy-eclipse-compiler.version>
 		<build-helper-maven-plugin.version>1.5</build-helper-maven-plugin.version>
+		<docker.plugin.version>0.4.13</docker.plugin.version>
+		<docker.image.prefix>kbastani</docker.image.prefix>
 
 		<!-- Libs -->
 		<spring-cloud-dependencies.version>Camden.SR7</spring-cloud-dependencies.version>

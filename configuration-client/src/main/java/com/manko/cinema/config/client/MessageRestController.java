@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MessageRestController {
 
-    @Value("${message}")
+    @Value("${message:Hello world - Config Server is not working..pelase check}")
     private String message;
 
     @GetMapping("/message")

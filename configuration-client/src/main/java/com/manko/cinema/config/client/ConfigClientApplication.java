@@ -10,6 +10,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ConfigClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigClientApplication.class);
+        SpringApplication.run(ConfigClientApplication.class, args);
     }
 }
