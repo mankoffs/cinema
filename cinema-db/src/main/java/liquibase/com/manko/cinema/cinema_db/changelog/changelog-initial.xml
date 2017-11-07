@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <changeSet id="cinema_db" author="smanko">
+        <sqlFile path="initial/tables/movie_lang.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="initial/tables/movie_rating.sql" relativeToChangelogFile="true"/>
+        <!--<sqlFile path="initial/tables/movie_actor.sql" relativeToChangelogFile="true"/>-->
+        <!--<sqlFile path="initial/tables/actor.sql" relativeToChangelogFile="true"/>-->
+        <!--<sqlFile path="initial/tables/movie.sql" relativeToChangelogFile="true"/>-->
+
+        <!--<rollback />-->
+    </changeSet>
+
+    <changeSet id="cinema_db_data" author="smanko">
+        <sql> set foreign_key_checks = 0; </sql>
+        <sqlFile path="initial/data/load_movie_lang.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="initial/data/load_movie_rating.sql" relativeToChangelogFile="true"/>
+        <!--<sqlFile path="initial/data/load_movie.sql" relativeToChangelogFile="true"/>-->
+
+        <sql> set foreign_key_checks = 1; </sql>
+
+        <!--<rollback />-->
+    </changeSet>
+</databaseChangeLog>

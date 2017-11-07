@@ -14,7 +14,9 @@
 	<modules>
 		<module>config-service</module>
         <module>configuration-client</module>
-    </modules>
+		<module>movie-service</module>
+		<module>cinema-db</module>
+	</modules>
 
 	<properties>
 
