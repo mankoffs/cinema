@@ -1,0 +1,1 @@
+# DELETE from movie_actor where movie_actor.actor_id = 1;

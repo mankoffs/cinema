@@ -7,4 +7,6 @@
                             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
 
     <include file="changelog-initial.xml" relativeToChangelogFile="true"/>
+    <include file="migration/cinema01/migration_cinema_01.xml" relativeToChangelogFile="true" />
+
 </databaseChangeLog>

@@ -12,7 +12,7 @@ CREATE TABLE movie (
   FOREIGN KEY (movie_rating_id) REFERENCES movie_rating(movie_rating_id)
     ON DELETE RESTRICT
     ON UPDATE CASCADE,
-  FOREIGN KEY (language_id) REFERENCES language_movie(language_id)
+  FOREIGN KEY (language_id) REFERENCES movie_lang(language_id)
     ON DELETE RESTRICT
     ON UPDATE CASCADE)
 
