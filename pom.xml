@@ -35,7 +35,7 @@
 		<docker.image.prefix>kbastani</docker.image.prefix>
 
 		<!-- Libs -->
-		<spring-cloud-dependencies.version>Camden.SR7</spring-cloud-dependencies.version>
+		<spring-cloud-dependencies.version>Dalston.SR4</spring-cloud-dependencies.version>
 
 	</properties>
 
