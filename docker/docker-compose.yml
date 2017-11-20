@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  discovery:
+    image: smanko/discovery-service
+    ports:
+      - "8761:8761"
+
+  configserver:
+    image: smanko/config-service
+    ports:
+       -  "8888:8888"
+    depends_on:
+      discovery:
+        condition: service_healthy
